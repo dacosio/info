@@ -26,6 +26,7 @@ import martec from "./assets/martec.png";
 import facebook from "./assets/facebook.png";
 import linkedin from "./assets/linkedin.png";
 import gmail from "./assets/gmail.png";
+import dashboard from "./assets/dashboard.png";
 
 export const navLinks = ["home", "about", "skills", "portfolio", "contact"];
 
@@ -99,6 +100,12 @@ export const finishes = [
 ];
 export const workImages = [
   {
+    id: 7,
+    img: dashboard,
+    repo: "https://github.com/dacosio/portfolio-admin-dashboard",
+    url: "https://portfolio-admin-dashboard-4m9z-38f64g2en-dacosio.vercel.app/dashboard",
+  },
+  {
     id: 1,
     img: shoretrade,
     name: "project 1",
@@ -123,12 +130,12 @@ export const workImages = [
     repo: "https://github.com/dacosio/portfolio-facebook-clone/tree/master",
     url: null,
   },
-  {
-    id: 5,
-    img: gmail,
-    repo: "https://github.com/dacosio/portfolio-gmail-clone",
-    url: null,
-  },
+  // {
+  //   id: 5,
+  //   img: gmail,
+  //   repo: "https://github.com/dacosio/portfolio-gmail-clone",
+  //   url: null,
+  // },
   {
     id: 6,
     img: linkedin,
