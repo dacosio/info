@@ -26,6 +26,7 @@ import martec from "./assets/martec.png";
 import facebook from "./assets/facebook.png";
 import linkedin from "./assets/linkedin.png";
 import gmail from "./assets/gmail.png";
+import dashboard from "./assets/dashboard.png";
 
 export const navLinks = ["home", "about", "skills", "portfolio", "contact"];
 
@@ -110,6 +111,12 @@ export const workImages = [
     img: martec,
     repo: null,
     url: "https://www.themartec.com/",
+  },
+  {
+    id: 7,
+    img: dashboard,
+    repo: "https://github.com/dacosio/portfolio-admin-dashboard",
+    url: "https://portfolio-admin-dashboard-4m9z-38f64g2en-dacosio.vercel.app/dashboard",
   },
   {
     id: 3,

@@ -22,55 +22,56 @@ const Portfolio = () => {
         exit={{ opacity: 0, y: -50 }}
         className="workImages"
       >
-        {workImages.map((work) => {
-          if (work.repo != null) {
-            return (
-              <div className="workImage" key={work.id}>
-                <img src={work.img} alt="workImg" />
-                <motion.div
-                  initial={{ opacity: 0 }}
-                  whileHover={{ opacity: [0, 1] }}
-                  transition={{ duration: 0.3, ease: "easeInOut" }}
-                  className="hoverLayer"
+        <div className="workImage" key={work.id}>
+          <img src={work.img} alt="workImg" />
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileHover={{ opacity: [0, 1] }}
+            transition={{ duration: 0.3, ease: "easeInOut" }}
+            className="hoverLayer"
+          >
+            {workImages.map((work) => {
+              if (work.repo != null) {
+                <motion.a
+                  key={work.id}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href={work.repo}
+                  whileInView={{ scale: [0, 1] }}
+                  whileHover={{ scale: [1, 1.1] }}
+                  transition={{ duration: 0.3 }}
                 >
-                  <motion.a
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    href={work.repo}
-                    whileInView={{ scale: [0, 1] }}
-                    whileHover={{ scale: [1, 1.1] }}
-                    transition={{ duration: 0.3 }}
-                  >
-                    <FiGithub />
-                  </motion.a>
-                </motion.div>
-              </div>
-            );
-          } else {
-            return (
-              <div className="workImage" key={work.id}>
-                <img src={work.img} alt="workImg" />
-                <motion.div
-                  initial={{ opacity: 0 }}
-                  whileHover={{ opacity: [0, 1] }}
-                  transition={{ duration: 0.3, ease: "easeInOut" }}
-                  className="hoverLayer"
+                  <FiGithub />
+                </motion.a>;
+              } else if (work.url != null) {
+                <motion.a
+                  key={work.id}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href={work.url}
+                  whileInView={{ scale: [0, 1] }}
+                  whileHover={{ scale: [1, 1.1] }}
+                  transition={{ duration: 0.3 }}
                 >
-                  <motion.a
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    href={work.url}
-                    whileInView={{ scale: [0, 1] }}
-                    whileHover={{ scale: [1, 1.1] }}
-                    transition={{ duration: 0.3 }}
-                  >
-                    <FiEye />
-                  </motion.a>
-                </motion.div>
-              </div>
-            );
-          }
-        })}
+                  <FiEye />
+                </motion.a>;
+              } else {
+                <motion.a
+                  key={work.id}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href={work.url}
+                  whileInView={{ scale: [0, 1] }}
+                  whileHover={{ scale: [1, 1.1] }}
+                  transition={{ duration: 0.3 }}
+                >
+                  <FiGithub />
+                  <FiEye />
+                </motion.a>;
+              }
+            })}
+          </motion.div>
+        </div>
       </motion.div>
     </div>
   );
