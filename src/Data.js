@@ -122,25 +122,25 @@ export const workImages = [
     id: 3,
     img: airbnb,
     repo: "https://github.com/dacosio/portfolio-airbnb-clone",
-    url: null,
-  },
-  {
-    id: 4,
-    img: facebook,
-    repo: "https://github.com/dacosio/portfolio-facebook-clone/tree/master",
-    url: null,
+    url: "https://portf-airbnb-clone-89ewtscho-dacosio.vercel.app/",
   },
   // {
-  //   id: 5,
-  //   img: gmail,
-  //   repo: "https://github.com/dacosio/portfolio-gmail-clone",
+  //   id: 4,
+  //   img: facebook,
+  //   repo: "https://github.com/dacosio/portfolio-facebook-clone/tree/master",
   //   url: null,
   // },
+  {
+    id: 5,
+    img: gmail,
+    repo: "https://github.com/dacosio/portfolio-gmail-clone",
+    url: "https://clone-3dc87.web.app/",
+  },
   {
     id: 6,
     img: linkedin,
     repo: "https://github.com/dacosio/portfolio-linkedin-clone",
-    url: null,
+    url: "https://linkedin-clone-b50af.firebaseapp.com/",
   },
 ];
 
