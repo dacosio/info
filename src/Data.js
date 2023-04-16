@@ -21,7 +21,7 @@ import { BsMedium } from "react-icons/bs";
 import { TbBrandDocker } from "react-icons/tb";
 import portfolio from "./assets/portfolio.jpg";
 import shoretrade from "./assets/shoretrade.png";
-import airbnb from "./assets/airbnb.png";
+import chat from "./assets/chat.png";
 import martec from "./assets/martec.png";
 import facebook from "./assets/facebook.png";
 import linkedin from "./assets/linkedin.png";
@@ -120,9 +120,9 @@ export const workImages = [
   },
   {
     id: 3,
-    img: airbnb,
-    repo: "https://github.com/dacosio/portfolio-airbnb-clone",
-    url: "https://portf-airbnb-clone-89ewtscho-dacosio.vercel.app/",
+    img: chat,
+    repo: "https://github.com/dacosio/portfolio-ai-chat/tree/main",
+    url: "https://portfolio-ai-chat.vercel.app/",
   },
   // {
   //   id: 4,
