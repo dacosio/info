@@ -24,9 +24,9 @@ import shoretrade from "./assets/shoretrade.png";
 import chat from "./assets/chat.png";
 import martec from "./assets/martec.png";
 import facebook from "./assets/facebook.png";
-import linkedin from "./assets/linkedin.png";
 import gmail from "./assets/gmail.png";
 import dashboard from "./assets/dashboard.png";
+import splitshare from "./assets/splitshare.png";
 
 export const navLinks = ["home", "about", "skills", "portfolio", "contact"];
 
@@ -100,47 +100,41 @@ export const finishes = [
 ];
 export const workImages = [
   {
-    id: 7,
+    id: 1,
+    img: splitshare,
+    repo: "https://github.com/dacosio/integrated-project",
+    url: "https://splitshare-integrated.vercel.app/",
+  },
+  {
+    id: 2,
     img: dashboard,
     repo: "https://github.com/dacosio/portfolio-admin-dashboard",
     url: "https://portfolio-admin-dashboard-4m9z-38f64g2en-dacosio.vercel.app/dashboard",
   },
   {
-    id: 1,
+    id: 3,
     img: shoretrade,
     name: "project 1",
     repo: null,
     url: "https://www.shoretrade.com/seller",
   },
   {
-    id: 2,
+    id: 4,
     img: martec,
     repo: null,
     url: "https://www.themartec.com/",
   },
   {
-    id: 3,
+    id: 5,
     img: chat,
     repo: "https://github.com/dacosio/portfolio-ai-chat/tree/main",
     url: "https://portfolio-ai-chat.vercel.app/",
   },
-  // {
-  //   id: 4,
-  //   img: facebook,
-  //   repo: "https://github.com/dacosio/portfolio-facebook-clone/tree/master",
-  //   url: null,
-  // },
   {
-    id: 5,
+    id: 6,
     img: gmail,
     repo: "https://github.com/dacosio/portfolio-gmail-clone",
     url: "https://clone-3dc87.web.app/",
-  },
-  {
-    id: 6,
-    img: linkedin,
-    repo: "https://github.com/dacosio/portfolio-linkedin-clone",
-    url: "https://linkedin-clone-b50af.firebaseapp.com/",
   },
 ];
 
