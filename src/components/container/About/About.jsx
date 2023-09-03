@@ -55,13 +55,15 @@ const About = () => {
               </div>
             );
           })}
-          <motion.a
-            href="#contact"
-            whileHover={{ scale: 1.1 }}
-            transition={{ duration: 0.3 }}
-          >
-            Contact Me
-          </motion.a>
+          <div>
+            <motion.a
+              href="#contact"
+              whileHover={{ scale: 1.1 }}
+              transition={{ duration: 0.3 }}
+            >
+              Contact Me
+            </motion.a>
+          </div>
         </motion.div>
       </div>
     </div>

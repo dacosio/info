@@ -1,10 +1,14 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import "./Portfolio.scss";
 import { workImages } from "../../../Data";
 import { FiGithub, FiEye } from "react-icons/fi";
 import { motion } from "framer-motion";
+import useMediaQuery from "../../../hooks/useMediaQuery";
 
 const Portfolio = () => {
+  const tablet = useMediaQuery("(max-width: 769px)");
+  console.log(tablet);
+
   return (
     <div className="container" id="portfolio">
       <motion.div
@@ -23,7 +27,6 @@ const Portfolio = () => {
         className="workImages"
       >
         {workImages.map((work) => {
-          console.log(work);
           if (work.url == null) {
             return (
               <div className="workImage" key={work.id}>
@@ -45,6 +48,27 @@ const Portfolio = () => {
                     <FiGithub />
                   </motion.a>
                 </motion.div>
+
+                {tablet && (
+                  <div style={{ display: "flex", justifyContent: "center" }}>
+                    <a
+                      style={{
+                        display: "inline",
+                        textDecoration: "none",
+                        border: "1px solid #EB9C5C",
+                        padding: "0.1rem 0.5rem",
+                        borderRadius: "12px",
+                        background:
+                          "linear-gradient(to bottom, #EB9C5C, white)",
+                        color: "#1F1F1F",
+                        fontSize: "14px",
+                      }}
+                      href={work.repo}
+                    >
+                      Repo
+                    </a>
+                  </div>
+                )}
               </div>
             );
           } else if (work.url && work.repo == null) {
@@ -68,6 +92,26 @@ const Portfolio = () => {
                     <FiEye />
                   </motion.a>
                 </motion.div>
+                {tablet && (
+                  <div style={{ display: "flex", justifyContent: "center" }}>
+                    <a
+                      style={{
+                        display: "inline",
+                        textDecoration: "none",
+                        border: "1px solid #EB9C5C",
+                        padding: "0.1rem 0.5rem",
+                        borderRadius: "12px",
+                        background:
+                          "linear-gradient(to bottom, #EB9C5C, white)",
+                        color: "#1F1F1F",
+                        fontSize: "14px",
+                      }}
+                      href={work.url}
+                    >
+                      URL
+                    </a>
+                  </div>
+                )}
               </div>
             );
           } else {
@@ -101,6 +145,56 @@ const Portfolio = () => {
                     <FiEye />
                   </motion.a>
                 </motion.div>
+                {tablet && (
+                  <div
+                    style={{
+                      display: "flex",
+                      justifyContent: "center",
+                      alignItems: "center",
+                      gap: "1rem",
+                      marginTop: "6px",
+                    }}
+                  >
+                    <a
+                      style={{
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "center",
+                        gap: "1rem",
+                        textDecoration: "none",
+                        border: "1px solid #EB9C5C",
+                        padding: "0.1rem 0.5rem",
+                        borderRadius: "12px",
+                        background:
+                          "linear-gradient(to bottom, #EB9C5C, white)",
+                        color: "#1F1F1F",
+                        fontSize: "14px",
+                      }}
+                      href={work.url}
+                    >
+                      URL
+                    </a>
+                    <a
+                      style={{
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "center",
+                        gap: "1rem",
+                        textDecoration: "none",
+                        border: "1px solid #EB9C5C",
+                        padding: "0.1rem 0.5rem",
+                        borderRadius: "12px",
+                        background:
+                          "linear-gradient(to bottom, #EB9C5C, white)",
+                        color: "#1F1F1F",
+                        fontSize: "14px",
+                      }}
+                      href={work.repo}
+                    >
+                      Repo
+                    </a>
+                  </div>
+                )}
               </div>
             );
           }
