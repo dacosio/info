@@ -27,6 +27,8 @@ import facebook from "./assets/facebook.png";
 import gmail from "./assets/gmail.png";
 import dashboard from "./assets/dashboard.png";
 import splitshare from "./assets/splitshare.png";
+import langara from "./assets/langara.png";
+import sprout from "./assets/sprout.png";
 
 export const navLinks = ["home", "about", "skills", "portfolio", "contact"];
 
@@ -126,15 +128,15 @@ export const workImages = [
   },
   {
     id: 5,
-    img: chat,
-    repo: "https://github.com/dacosio/portfolio-ai-chat/tree/main",
-    url: "https://portfolio-ai-chat.vercel.app/",
+    img: langara,
+    repo: null,
+    url: "https://langara-app-nextjs.vercel.app/",
   },
   {
     id: 6,
-    img: gmail,
-    repo: "https://github.com/dacosio/portfolio-gmail-clone",
-    url: "https://clone-3dc87.web.app/",
+    img: sprout,
+    repo: "https://github.com/dacosio/project-2.git",
+    url: "https://project-2-app.vercel.app/",
   },
 ];
 
