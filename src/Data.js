@@ -75,6 +75,12 @@ export const icons = [
 
 export const experiences = [
   {
+    id: 0,
+    year: "2023-present",
+    position: "Full-stack Developer",
+    company: "Langara College",
+  },
+  {
     id: 1,
     year: "2021-2023",
     position: "Consulting Engineer (Fullstack Developer)",
